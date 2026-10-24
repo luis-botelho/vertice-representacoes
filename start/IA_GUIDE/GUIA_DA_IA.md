@@ -89,3 +89,10 @@ Próxima: CRUD produtos/categorias, gestão de leads, atualizar docs
 - Estrutura completa MVP
 
 Próxima: atualizar docs conforme prompts, criar branches estratégicos, rodar verificações
+
+## Seção 9 - Git
+- Repo git iniciado, start/ ignorado
+- Branches criadas: feature/setup-inicial, feature/catalogo-cotacao, feature/admin, docs/atualizacao
+- Commits estratégicos por seção
+
+Próxima: criar repo no GitHub e push (a pasta start fica só no pc, não sobe)
