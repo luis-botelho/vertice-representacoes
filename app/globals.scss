@@ -8,7 +8,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
@@ -19,9 +19,23 @@ a {
 }
 
 :root {
-  --navy: #102B46;
-  --blue: #2F80ED;
-  --blue-light: #8DC7E8;
-  --gray: #64748B;
-  --white: #FFFFFF;
+  --primary: #00162c;
+  --primary-container: #102b46;
+  --on-primary: #ffffff;
+  --on-primary-container: #7a93b3;
+  --secondary: #005cba;
+  --on-secondary: #ffffff;
+  --secondary-container: #448ffd;
+  --background: #f8f9ff;
+  --surface: #f8f9ff;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #eff4ff;
+  --surface-container: #e5eeff;
+  --surface-container-high: #dce9ff;
+  --on-surface: #0b1c30;
+  --on-surface-variant: #43474d;
+  --outline: #74777e;
+  --outline-variant: #c3c6ce;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500;600&display=swap');
