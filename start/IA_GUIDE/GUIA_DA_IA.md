@@ -83,3 +83,9 @@ Próxima: área admin com auth server-side, CRUD, gestão de leads
 - Dashboard básico
 
 Próxima: CRUD produtos/categorias, gestão de leads, atualizar docs
+
+## Seção 8 - Confirmação e finalizações
+- Página de confirmação
+- Estrutura completa MVP
+
+Próxima: atualizar docs conforme prompts, criar branches estratégicos, rodar verificações
