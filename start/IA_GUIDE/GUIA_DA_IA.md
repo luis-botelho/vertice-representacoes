@@ -68,3 +68,10 @@ Próxima: criar rotas públicas (home, catalogo, cotacao, privacidade) e compone
 - Sem Tailwind
 
 Próxima: catálogo, detalhe, cotação, privacidade/termos
+
+## Seção 6 - Páginas públicas completas
+- Catálogo, cotação com formulário, privacidade, termos
+- Avisos de revisão jurídica
+- Sem conta obrigatória para cotar
+
+Próxima: área admin com auth server-side, CRUD, gestão de leads
