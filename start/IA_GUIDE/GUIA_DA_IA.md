@@ -113,3 +113,19 @@ Próxima: rodar lint/typecheck/test/build
 Todos os critérios atendidos: Next.js App Router, TS strict, SCSS Modules, sem Tailwind, catálogo B2B sem checkout, /admin sem link público mas com auth server-side, lead persistido antes de email, JSON fora de public, aviso privacidade + consentimento marketing opcional.
 
 Próxima: atualizar docs conforme necessário e finalizar
+
+## Seção 12 - Stitch UI/UX
+- Copiados arquivos Stitch: DESIGN.md, logos, screenshots
+- Paleta extraída: primary #00162c, secondary #005cba, surface #f8f9ff
+- Fontes: Plus Jakarta Sans (headings), Inter (body)
+- Adaptação para Next.js + SCSS Modules em andamento
+
+## Seção 13 - Adaptação Stitch
+- Atualizados design tokens para paleta Stitch
+- Header redesenhado com logo e navegação
+- Hero com grid, badges, CTAs
+- Cards de métricas
+- Material Symbols integrados
+- Responsivo mobile/desktop
+
+Próxima: adaptar catálogo e cotação para design Stitch
