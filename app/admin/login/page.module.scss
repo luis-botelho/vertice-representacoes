@@ -1,7 +1,11 @@
 .main { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; }
 .container { background: white; padding: 2rem; border-radius: 4px; border: 1px solid #e2e8f0; max-width: 400px; width: 100%; }
-h1 { color: var(--navy); margin-bottom: 0.5rem; text-align: center; }
+.title { color: var(--navy); margin-bottom: 0.5rem; text-align: center; }
 .warning { color: #92400e; background: #fef3c7; padding: 0.75rem; border-radius: 4px; font-size: 0.875rem; margin-bottom: 1.5rem; }
 .form { display: flex; flex-direction: column; gap: 1rem; }
-.formGroup { display: flex; flex-direction: column; gap: 0.5rem; label { color: var(--navy); font-size: 0.9rem; } input { padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 4px; &:focus { outline: 2px solid var(--blue); outline-offset: 2px; } } }
-.btn { background: var(--navy); color: white; padding: 0.75rem; border: none; border-radius: 4px; cursor: pointer; &:hover { opacity: 0.9; } }
+.formGroup { display: flex; flex-direction: column; gap: 0.5rem; }
+.label { color: var(--navy); font-size: 0.9rem; }
+.input { padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 4px; }
+.input:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
+.btn { background: var(--navy); color: white; padding: 0.75rem; border: none; border-radius: 4px; cursor: pointer; }
+.btn:hover { opacity: 0.9; }
