@@ -1,0 +1,8 @@
+.main { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.container { max-width: 600px; text-align: center; padding: 2rem; }
+h1 { color: var(--navy); margin-bottom: 1rem; }
+p { color: var(--navy); margin-bottom: 1rem; line-height: 1.6; }
+.note { color: var(--gray); font-size: 0.9rem; }
+.actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.btn { background: var(--navy); color: white; padding: 0.75rem 1.5rem; border-radius: 4px; }
+.btnSecondary { background: white; color: var(--navy); padding: 0.75rem 1.5rem; border: 1px solid var(--navy); border-radius: 4px; }
