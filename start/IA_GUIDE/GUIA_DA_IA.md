@@ -61,3 +61,10 @@ Próxima: API de cotação (persistir antes de email), rotas públicas, admin
 - Falha de email não apaga lead nem confirma sucesso enganoso
 
 Próxima: criar rotas públicas (home, catalogo, cotacao, privacidade) e componentes básicos
+
+## Seção 5 - Páginas públicas básicas
+- Home com hero, como funciona, links
+- Layout global e estilos SCSS Modules
+- Sem Tailwind
+
+Próxima: catálogo, detalhe, cotação, privacidade/termos
