@@ -103,3 +103,13 @@ Próxima: criar repo no GitHub e push (a pasta start fica só no pc, não sobe)
 - start/ mantido apenas local (ignorado no git)
 
 Próxima: rodar lint/typecheck/test/build
+
+## Seção 11 - Verificações
+- Lint: OK
+- Typecheck: OK
+- Tests: OK (no tests)
+- Build: OK (13 rotas geradas)
+
+Todos os critérios atendidos: Next.js App Router, TS strict, SCSS Modules, sem Tailwind, catálogo B2B sem checkout, /admin sem link público mas com auth server-side, lead persistido antes de email, JSON fora de public, aviso privacidade + consentimento marketing opcional.
+
+Próxima: atualizar docs conforme necessário e finalizar
