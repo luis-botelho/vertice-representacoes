@@ -48,3 +48,10 @@ Próxima: criar app/ routes, lib/ (validation, storage, auth, email), components
 - Regras: persistir lead antes de email, validação server-side
 
 Próxima: auth, email adapter, API routes
+
+## Seção 3 - Auth e Email
+- Sessão básica com cookie HttpOnly
+- Adaptador SMTP nodemailer
+- Template HTML/texto com escape, links e sem PII excessiva no assunto
+
+Próxima: API de cotação (persistir antes de email), rotas públicas, admin
