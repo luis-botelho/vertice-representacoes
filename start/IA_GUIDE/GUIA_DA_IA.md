@@ -41,3 +41,10 @@ Baseado em: VERTICE_PROMPT_MESTRE_OPENCODE.txt + VERTICE_AI_STARTER/ + instruç�
 - Estrutura de pastas criada
 
 Próxima: criar app/ routes, lib/ (validation, storage, auth, email), components/, features/
+
+## Seção 2 - Schemas e Storage
+- Criados schemas Zod (Category, Product, QuoteRequest, QuoteSubmit)
+- jsonRepo com escrita segura (tmp + rename), leitura com fallback
+- Regras: persistir lead antes de email, validação server-side
+
+Próxima: auth, email adapter, API routes
