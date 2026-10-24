@@ -1,0 +1,93 @@
+import { z } from 'zod';
+
+export const CategorySchema = z.object({
+  id: z.string().uuid(),
+  name: z.string().min(1).max(120),
+  slug: z.string().min(1).max(120),
+  description: z.string().max(500).optional(),
+  imagePath: z.string().max(255).optional(),
+  active: z.boolean(),
+  sortOrder: z.number().int(),
+});
+
+export const ProductSchema = z.object({
+  id: z.string().uuid(),
+  slug: z.string().min(1).max(160),
+  name: z.string().min(1).max(160),
+  shortDescription: z.string().max(280).optional(),
+  description: z.string().max(2000).optional(),
+  categoryId: z.string().uuid(),
+  brand: z.string().max(80).optional(),
+  sku: z.string().max(80).optional(),
+  unit: z.string().max(20).optional(),
+  specifications: z.record(z.string(), z.string()).optional(),
+  imagePath: z.string().max(255).optional(),
+  active: z.boolean(),
+  sortOrder: z.number().int(),
+  createdAt: z.string().datetime(),
+  updatedAt: z.string().datetime(),
+});
+
+const QuoteItemSchema = z.object({
+  productId: z.string().uuid().optional(),
+  nameSnapshot: z.string().min(1).max(160),
+  skuSnapshot: z.string().max(80).optional(),
+  brandSnapshot: z.string().max(80).optional(),
+  unitSnapshot: z.string().max(20).optional(),
+  quantity: z.coerce.number().positive().max(100000),
+});
+
+export const QuoteRequestSchema = z.object({
+  id: z.string().uuid(),
+  createdAt: z.string().datetime(),
+  status: z.enum(['new', 'in_progress', 'quoted', 'won', 'lost']),
+  contactName: z.string().min(2).max(120),
+  companyName: z.string().min(2).max(160),
+  role: z.string().max(80).optional(),
+  email: z.string().email(),
+  phone: z.string().min(8).max(40),
+  city: z.string().min(2).max(80),
+  state: z.string().min(2).max(2),
+  cnpj: z.string().max(20).optional().or(z.literal('')),
+  items: z.array(QuoteItemSchema).min(1),
+  desiredDeadline: z.string().max(80).optional(),
+  deliveryDestination: z.string().max(160).optional(),
+  paymentCondition: z.string().max(80).optional(),
+  message: z.string().max(2000).optional(),
+  sourcePage: z.string().max(255),
+  utmSource: z.string().max(80).optional(),
+  utmMedium: z.string().max(80).optional(),
+  utmCampaign: z.string().max(80).optional(),
+  privacyNoticeVersion: z.string().min(1).max(40),
+  consentMarketing: z.boolean(),
+  internalNotes: z.string().max(4000).optional(),
+  notificationStatus: z.enum(['pending', 'sent', 'failed']),
+  emailSentAt: z.string().datetime().optional(),
+});
+
+export const QuoteSubmitSchema = z.object({
+  contactName: z.string().min(2).max(120),
+  companyName: z.string().min(2).max(160),
+  role: z.string().max(80).optional(),
+  email: z.string().email(),
+  phone: z.string().min(8).max(40),
+  city: z.string().min(2).max(80),
+  state: z.string().min(2).max(2),
+  cnpj: z.string().max(20).optional().or(z.literal('')),
+  items: z.array(z.object({
+    productId: z.string().uuid().optional(),
+    name: z.string().min(1).max(160),
+    sku: z.string().max(80).optional(),
+    brand: z.string().max(80).optional(),
+    unit: z.string().max(20).optional(),
+    quantity: z.coerce.number().positive().max(100000),
+  })).min(1),
+  desiredDeadline: z.string().max(80).optional(),
+  deliveryDestination: z.string().max(160).optional(),
+  paymentCondition: z.string().max(80).optional(),
+  message: z.string().max(2000).optional(),
+  privacyAccepted: z.literal(true),
+  consentMarketing: z.boolean(),
+  privacyNoticeVersion: z.string().min(1).max(40),
+  sourcePage: z.string().max(255).optional(),
+});
