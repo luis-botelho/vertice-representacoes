@@ -55,3 +55,9 @@ Próxima: auth, email adapter, API routes
 - Template HTML/texto com escape, links e sem PII excessiva no assunto
 
 Próxima: API de cotação (persistir antes de email), rotas públicas, admin
+
+## Seção 4 - API Cotação
+- POST /api/quotes: valida, persiste lead ANTES de email, tenta enviar, atualiza status
+- Falha de email não apaga lead nem confirma sucesso enganoso
+
+Próxima: criar rotas públicas (home, catalogo, cotacao, privacidade) e componentes básicos
