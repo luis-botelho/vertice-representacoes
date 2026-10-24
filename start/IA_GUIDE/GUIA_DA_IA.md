@@ -96,3 +96,10 @@ Próxima: atualizar docs conforme prompts, criar branches estratégicos, rodar v
 - Commits estratégicos por seção
 
 Próxima: criar repo no GitHub e push (a pasta start fica só no pc, não sobe)
+
+## Seção 10 - GitHub
+- Repo criado: https://github.com/luis-botelho/vertice-representacoes
+- Branches pushed
+- start/ mantido apenas local (ignorado no git)
+
+Próxima: rodar lint/typecheck/test/build
