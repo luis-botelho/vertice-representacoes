@@ -75,3 +75,11 @@ Próxima: catálogo, detalhe, cotação, privacidade/termos
 - Sem conta obrigatória para cotar
 
 Próxima: área admin com auth server-side, CRUD, gestão de leads
+
+## Seção 7 - Admin com auth server-side
+- /admin/login sem link público
+- /admin protegido por getSession() server-side
+- API login com bcrypt
+- Dashboard básico
+
+Próxima: CRUD produtos/categorias, gestão de leads, atualizar docs
