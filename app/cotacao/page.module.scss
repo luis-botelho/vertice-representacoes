@@ -1,0 +1,154 @@
+.main {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 0;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.logo {
+  font-size: 1.25rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  
+  a {
+    color: var(--navy);
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+
+.content {
+  padding: 2rem 0;
+  
+  h1 {
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+}
+
+.subtitle {
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldset {
+  border: 1px solid #cbd5e1;
+  padding: 1.5rem;
+  border-radius: 4px;
+  
+  legend {
+    color: var(--navy);
+    font-weight: 600;
+    padding: 0 0.5rem;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  label {
+    color: var(--navy);
+    font-size: 0.9rem;
+  }
+  
+  input,
+  textarea {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    
+    &:focus {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  
+  label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--navy);
+    font-size: 0.9rem;
+    
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+  
+  input[type="checkbox"] {
+    margin-top: 0.25rem;
+  }
+}
+
+.submitBtn {
+  background: var(--navy);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+  
+  &:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+  }
+}
